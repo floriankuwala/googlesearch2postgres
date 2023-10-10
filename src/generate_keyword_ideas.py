@@ -11,7 +11,7 @@ import time
 
 client = GoogleAdsClient.load_from_storage("resources/google-ads.yaml") # Make sure to provide the path to the 'google-ads.yaml' file
 
-customer_id = '3160532260' # Replace with your own customer ID.
+customer_id = '66789990' # Replace with your own customer ID.
 
 # Mapping of Months
 

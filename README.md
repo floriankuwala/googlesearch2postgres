@@ -1,7 +1,18 @@
-# keyword-generator
+
+![Google Search Data to PostGres](assets/hero_visual.png)
+
+# Google Search Data to PostGres
 This project uses the **Google Ads API to generate keyword ideas through the keyword adplanner feature**. By **defining a seed keywords** you will retrieve related keywords. Every **associated (related) keyword will come with monthly search volume**, average search volume, high- and low bid cpc, concept_group, brand bool and competition index. Generated data will be stored in the data folder in the corresponding **csv file called keyword_ideas.csv**. With a further selection you can upload the data automatically into a new table of your hosted Postgres (Se how to define the .env file further below)
 
 For using this repository **you need first having an active Google Ads account** and at least a **test api token in Google Ads**. Authentication can be troublesome due the fact you need to **register an App on GCP** and **apply for an Google Ads API key**, therefore I am creating currently a blog article that takes you **step by step through the process** (https://medium.com/kuwala-io/navigating-the-google-ads-api-authorization-maze-step-by-step-guide-for-authentication-402313d1bd0d). Once you have your credentials, you can **add credentials into the google-ads.yaml** and the customer_id in the generate_keywords.py, and run the project. 
+
+More Information with Step-by-Step Guide and Example Projects can be found here
+
+| Description     | Link                                      |
+| --------------- | ----------------------------------------- |
+| How to get google ads authorization  | [Step-by-Step Guide for Authentication](https://medium.com/kuwala-io/navigating-the-google-ads-api-authorization-maze-step-by-step-guide-for-authentication-402313d1bd0d)    |
+| Perform an example query  | [coming soon...]()    |
+| A Prototype dashboard based on this repo  | [Link Text 3](http://trendtool-frontend.geosage.kuwala.io/)    |
 
 ## Prerequisites
 
@@ -14,7 +25,7 @@ For using this repository **you need first having an active Google Ads account**
 
 ```sh
 git clone https://github.com/floriankuwala/keyword-generator.git
-cd keyword-generator
+cd googlesearch2postgres
 ```
    
 2. **Setup your virtual environment variable**
@@ -50,19 +61,8 @@ pip install -r requirements.txt
 
 ```
 
-5. **Set Up Environment Variables (Optional / Coming Soon...)**
+5. **Set Up Environment Variables **
 
-Add your credentials for a hosted PostGres in your .env file as following: 
-
-```sh
-DB_TYPE=postgresql
-DB_USER=your username
-DB_PASSWORD=your password
-DB_HOST=your hostadress
-DB_PORT=5432
-```
-
-**AND**
 
 Configure your google-ads.yaml with the following information:
 ```yaml
@@ -76,6 +76,18 @@ use_proto_plus: True
 **AND**
 Adjust your customer_id in the generate_keyword_ideas.py
 
+
+**OPTIONAL**
+Add your credentials for a hosted PostGres in your .env file as following: 
+
+```sh
+DB_TYPE=postgresql
+DB_USER=your username
+DB_PASSWORD=your password
+DB_HOST=your hostadress
+DB_PORT=5432
+```
+
 ## Running the Project
 ```sh
 
@@ -86,8 +98,6 @@ python main.py
 The terminal will give you multiple options which you can start seperately.
 a) generating keyword ideas through google ads api (ads api credentials need to be acquired)
 b) creating a table and upload the generated data to a hosted postgres
-c) retrieving keywords from database and utilize google trends (output in the corresponding csv as well)
-
 
 ## Folder Structure
 

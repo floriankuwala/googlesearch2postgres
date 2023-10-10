@@ -1,5 +1,5 @@
+<img src="assets/hero_visual.png" alt="Adplanner to PostGres" width="300"/>
 
-![Google Search Data to PostGres](assets/hero_visual.png)
 
 # Google Search Data to PostGres
 This project uses the **Google Ads API to generate keyword ideas through the keyword adplanner feature**. By **defining a seed keywords** you will retrieve related keywords. Every **associated (related) keyword will come with monthly search volume**, average search volume, high- and low bid cpc, concept_group, brand bool and competition index. Generated data will be stored in the data folder in the corresponding **csv file called keyword_ideas.csv**. With a further selection you can upload the data automatically into a new table of your hosted Postgres (Se how to define the .env file further below)
@@ -12,7 +12,7 @@ More Information with Step-by-Step Guide and Example Projects can be found here
 | --------------- | ----------------------------------------- |
 | How to get google ads authorization  | [Step-by-Step Guide for Authentication](https://medium.com/kuwala-io/navigating-the-google-ads-api-authorization-maze-step-by-step-guide-for-authentication-402313d1bd0d)    |
 | Perform an example query  | [coming soon...]()    |
-| A Prototype dashboard based on this repo  | [Link Text 3](http://trendtool-frontend.geosage.kuwala.io/)    |
+| A Prototype dashboard based on this repo  | [Trendtool](http://trendtool-frontend.geosage.kuwala.io/)    |
 
 ## Prerequisites
 

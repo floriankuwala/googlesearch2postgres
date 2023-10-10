@@ -1,0 +1,3 @@
+__pycache__/
+my_project_env/.env
+resources/google-ads.yaml

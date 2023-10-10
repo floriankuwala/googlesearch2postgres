@@ -1,4 +1,4 @@
-<img src="assets/hero_visual.png" alt="Adplanner to PostGres" width="300"/>
+<img src="assets/hero_visual.png" alt="Adplanner to PostGres" width="600"/>
 
 
 # Google Search Data to PostGres
